@@ -42,7 +42,14 @@ body {
 .btn-responsive:hover{
     cursor: pointer;
 }
+.btn-close{
+    position: absolute;
+    top: 30px;
+    right: 1rem;
+    z-index: 1;
+}
 #menu-responsive{
+    color :#506690;
     padding: 20px;
     position: fixed;
     left: 20px;
@@ -50,14 +57,35 @@ body {
     width: 93%;
     height: 100%;
     overflow: auto;
-    background-color: rgb(216, 195, 195);
+    background-color: white;    
     z-index: 10;
+    border-radius: 7px;
+    box-shadow: 10px 10px 8px 10px #888888;
 }
 #menu-responsive ul{
     list-style-type: none;
 }
-#menu-responsive ul .dropdown-item{
-    
+#menu-responsive .icon-documentation{
+    width: 50px;
+    float: left;
+    height: 100%;
+}
+#menu-responsive .nav-item{
+    border-bottom: 1px solid #f1f4f8;
+    margin: 20px 0px;
+}
+#menu-responsive .dropdown-menu{
+    margin-left: 10px;
+}
+#menu-responsive .dropdown-item:hover>a{
+    color : #133bbd;
+}
+#menu-responsive .li-dropdown:hover{
+    color : #133bbd;
+}
+#menu-responsive .head-dropdown{
+    display: flex;
+    justify-content: space-between
 }
 h1,h2,h3,h4,h5,h6{
     margin : 15px 0px 15px 0px;
@@ -209,10 +237,11 @@ ul{
     height: fit-content;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
-.main #dropdown .li-dropdown{
-    /* font-size: 13px; */
+.li-dropdown{
+    font-size: 14px;
     display: block;
     margin-bottom: 10px;
+    color : #506690;
 }
 .main #sub-dropdown{
     display: none;
@@ -309,12 +338,12 @@ ul{
     border-bottom-right-radius: 7px;
 
 }
-.main .menu-navbar .documentation .documentation-link p{
+.documentation-link p{
     margin:0;
     font-size: 16px;
     font-weight: lighter;
 }
-.main .menu-navbar .documentation .documentation-link hr{
+.documentation-link hr{
     border-top: rgba(80, 102, 144, 0.2) solid 0.5px;
     margin: 17px 0;
     opacity: 0.2;
