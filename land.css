@@ -6,6 +6,59 @@ body {
     line-height: 1.6;
     background-color: #fff;
   }
+  @media only screen and (max-width: 1200px) {
+    .small {
+      width: 800px !important;
+    }
+    .pl{
+        padding-left: 40px !important;
+    }
+    .smallbox-content {
+        margin: 35px;
+    }
+    .box-back{
+        margin-top:30px  !important;
+    }
+    .header-bar{
+        display: none !important;
+    }
+    .header-responsive{
+        display: block !important;
+    }
+  } 
+.header-bar{
+    
+}  
+.header-responsive{
+    display: none;
+}
+.hidden{
+    display: none !important;
+}
+.btn-responsive{
+    border: none;
+    background-color: white;
+}
+.btn-responsive:hover{
+    cursor: pointer;
+}
+#menu-responsive{
+    padding: 20px;
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    width: 93%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(216, 195, 195);
+    z-index: 10;
+}
+#menu-responsive ul{
+    list-style-type: none;
+}
+#menu-responsive ul .dropdown-item{
+    
+}
 h1,h2,h3,h4,h5,h6{
     margin : 15px 0px 15px 0px;
     font-weight: lighter;
@@ -81,12 +134,12 @@ a{
     border-right:1px solid rgba(22, 28, 45, 0.07);
     /* margin-right: 10px; */
 }
-button{
+/* button{
     border: none;
     border-radius: 5px;
     padding: 12px 17px;
     font-size: 16px;
-}
+} */
 ul{
     padding-left: 0;
 }
@@ -270,21 +323,25 @@ ul{
     background-color: #335eea;
     border: none;
     padding: 12px 17px;
-    border-radius: 5px;
-    margin-bottom:20px;
+    /* border-radius: 5px; */
+    /* margin-bottom:20px; */
 }
 
-.main .btn-buy a{
-    color: #ffffff;
+.btn-buy a{
+    color: #ffffff !important   ;
     font-size: 16px;
     text-decoration: none;
+}
+.header-btn{
+    margin-left: 100px;
+    transform: translateY(-25%);
 }
 .welcome{
     margin-top: 100px;
 }
 .main .text-welcome h1{
     font-weight: lighter;
-    font-size: 50px;
+    font-size: 42px;
 }
 .main .text-welcome p{
     font-size: 22px;
@@ -357,6 +414,9 @@ ul{
     border-right-width: 0;
     padding: 20px 0 17px;
     margin-bottom: 10px;
+}
+.pl{
+    padding-left: 100px;
 }
 .btn-success{
     width: 100%;
@@ -487,9 +547,8 @@ ul{
     background-color: rgba(51,94,234,.1);
     border-radius: 10px;
     padding: 5px;
-    text-align: center !important;
     width: fit-content;
-    margin-left: 43%;
+    margin: auto;
   }
   .label-gray{
     background-color: rgba(80,102,144,.1) !important;
@@ -520,14 +579,14 @@ ul{
     display: flex;
     justify-content: center;
 }
-}
+
 .btn-primary a{
     text-decoration: none;
     color: #ffffff;
 }
 .smallbox-content{
     padding: 20px;
-    margin: 50px;
+    margin: 90px 40px 90px 40px;
     font-size: 20px;
 }
 .btn-contact{
