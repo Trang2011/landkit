@@ -55,12 +55,13 @@ body {
     left: 20px;
     top: 20px;
     width: 93%;
-    height: 100%;
+    height: -webkit-fill-available;
     overflow: auto;
     background-color: white;    
     z-index: 10;
     border-radius: 7px;
     box-shadow: 10px 10px 8px 10px #888888;
+    
 }
 #menu-responsive ul{
     list-style-type: none;

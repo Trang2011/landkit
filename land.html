@@ -521,9 +521,11 @@
                   </a>
                   <ul class="dropdown">
                     <li class="dropdown-item dropright hovered">
-                      <a class="li-dropdown head-dropdown" href="#" onclick="dropdown_menu(1)">
+                      <a class="li-dropdown head-dropdown" id="head-1"  href="#" onclick="dropdown_menu(1)">
                         Sign In
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg"  width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down">
+                          <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
                       </a>
                       <div class="dropdown-menu hidden" id="dropdown-1">
                         <a class="li-dropdown" href="">
@@ -543,27 +545,9 @@
                         </a>
                       </div>
                     </li>
-                    <script>
-                      function closeHeader(){
-                        document.getElementById("menu-responsive").classList.toggle("hidden")
-                      }
-                      function dropdownBtn(){
-                        document.getElementById("menu-responsive").classList.toggle('hidden')
-                      }
-                      function dropdown_menu(id){     
-                            let i =1;
-                            for(i; i <=4; i++){                              
-                              if(i==id) document.getElementById("dropdown-" +id).classList.toggle('hidden')
-                              else {
-                                console.log(i+ " "+document.getElementById("dropdown-"+i).classList.value.includes('hidden'))
-                                document.getElementById("dropdown-" +id).classList = "dropdown-menu hidden"
-                              }
-                              console.log(i + document.getElementById("dropdown-"+i).classList.value)
-                            }
-                          }
-                    </script>
+                    
                     <li class="dropdown-item dropright hovered">
-                      <a class="li-dropdown head-dropdown" href="#" onclick="dropdown_menu(2)">
+                      <a class="li-dropdown head-dropdown " id="head-2" href="#" onclick="dropdown_menu(2)">
                         Sign Up
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
                       </a>
@@ -586,7 +570,7 @@
                       </div>
                     </li>
                     <li class="dropdown-item dropright">
-                      <a class="li-dropdown head-dropdown" href="#" onclick="dropdown_menu(3)">
+                      <a class="li-dropdown head-dropdown" id="head-3" href="#" onclick="dropdown_menu(3)">
                         Password Reset
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
                       </a>
@@ -603,7 +587,7 @@
                       </div>
                     </li>
                     <li class="dropdown-item dropright">
-                      <a class="li-dropdown head-dropdown" href="#" onclick="dropdown_menu(4)">
+                      <a class="li-dropdown head-dropdown" id="head-4" href="#" onclick="dropdown_menu(4)">
                         Error
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
                       </a>
@@ -678,20 +662,24 @@
                                 </g>
                             </svg>
                           </div>
-                        <div class="col-7">
+                        <div class="col-6">
                           <h4 class= "header-sm">CHANGELOG</h4>
                           <p>Keep track of changes</p>
                         </div>
-                        <div class="col-3">
+                        <div class="col-6" style="text-align: right;">
                         <span style="background-color: rgba(51,94,234,.1);color:#6610f2;border-radius: 5px;">
-                            1.1.1
+                            1.1.2
                           </span>
                         </div>
                       </a>
                     </div>
                       
                 </li>
+                
               </ul>
+              <li>
+                  <button class="btn btn-buy header-btn"><a href="#">Buy now</a></button>
+                </li>
           </div>
       </div>
     </div>
@@ -1523,5 +1511,41 @@
                         </div> 
                       </div> 
                     </footer>       
+                    <script>
+                        function closeHeader(){
+                          document.getElementById("menu-responsive").classList.toggle("hidden")
+                        }
+                        function dropdownBtn(){
+                          document.getElementById("menu-responsive").classList.toggle('hidden')
+                        }
+                        function dropdown_menu(id){     
+                              let i =1;
+                              for(i; i <=4; i++){     
+                                if(i===id) {
+                                  document.getElementById("dropdown-" +i).classList.toggle('hidden')
+                                }
+                                else if (i!==id){  
+                                  document.getElementById("dropdown-" +i).classList = "dropdown-menu hidden"
+                                }
+                                let head = "";
+                                switch(i) {
+                                  case 1 : head = "Sign In"
+                                  break;
+                                  case 2 : head = "Sign Up"
+                                  break;
+                                  case 3 : head = "Password Reset"
+                                  break;
+                                  case 4 : head = "Error"
+                                  break;
+                                }
+                                if(!document.getElementById("dropdown-"+i).classList.value.includes("hidden")){
+                                   document.getElementById("head-"+i).innerHTML = head+' <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-up"><polyline points="18 15 12 9 6 15"></polyline></svg>'
+                                }
+                                else{
+                                  document.getElementById("head-"+i).innerHTML = head+' <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>'
+                                }
+                              }
+                            }
+                      </script>
   </body>
 </html>
