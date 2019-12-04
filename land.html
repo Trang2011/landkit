@@ -10,7 +10,7 @@
   </head>
   <body>
     <div class="main">
-      <div class= "small">
+      <div class= "small flex">
       <div class="logo">
         <img src="https://landkit.goodthemes.co/assets/img/brand.svg" />
       </div>
@@ -20,7 +20,7 @@
             <a class ="head-hover" href="#">Landings</a>
             <div   id="dropdown" class="landings" style="width: 680px;border-radius: 5px;padding : 0"
             >
-              <div class="row">
+              <div class="row flex">
                 <div
                   class="dropdown-left col-6 border-left"
                   style="background-size: cover;background-image: url(https://landkit.goodthemes.co/assets/img/photos/photo-3.jpg);"
@@ -32,7 +32,7 @@
                     <p style="font-size: 20px;">Want to see an overview?</p>
                     <p>See all the pages at once.</p>
                     <button
-                      class="btn-documentation"
+                      class="btn btn-documentation"
                       style="background-color: #ffffff;"
                     >
                       <a href="#" style="text-decoration: none; color: #335eea;"
@@ -43,7 +43,7 @@
                 </div>
                 <div class="dropdown-right col-6 border-right" >
                   <div class="sub-menu" style="padding: 20px">
-                    <div class="row" >
+                    <div class="row flex" >
                       <div class="services-apps col-6">
                         <ul>
                           <li class=" header-sm">SERVICES</li>
@@ -84,7 +84,7 @@
           <li>
             <a class= "head-hover" href="#">Pages</a>
             <div id="dropdown" style="padding-left: 30px;">
-              <div class="row">
+              <div class="row flex">
                 <!-- <div class="sub-menu"> -->
                   <div class="col-3">
                         <h6 class=" header-sm uppercase">
@@ -373,13 +373,13 @@
           <button class="btn-responsive btn-close" onclick="closeHeader()">
               <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
           </button>
-            <ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav " style="padding : 20px;">
                 <li class="nav-item dropdown hovered">
                   <a class="text-gray" href="#">
                     Landings
                   </a>
-                  <div class="row">         
-                      <div class="col-6">
+                  <div class="row flex">         
+                      <div class="col-6 col-6-res">
                           <h6 class="header-sm uppercase">
                             Services
                           </h6>
@@ -402,7 +402,7 @@
                             Mobile
                           </a>
                         </div>          
-                      <div class="col-6">
+                      <div class="col-6 col-6-res">
                               <h6 class="header-sm uppercase">
                                 Web
                               </h6>
@@ -429,9 +429,9 @@
                   <a class="text-gray" href="#">
                     Pages
                   </a>
-                      <div class="row">
+                      <div class="row flex">
                           <!-- <div class="sub-menu"> -->
-                            <div class="col-6">
+                            <div class="col-6 col-6-res">
                                   <h6 class=" header-sm uppercase">
                                     Career
                                   </h6>
@@ -472,7 +472,7 @@
                                     Cover
                                   </a>
                             </div>
-                            <div class="col-6">
+                            <div class="col-6 col-6-res">
                                   <h6 class="header-sm uppercase">
                                     Blog
                                   </h6>
@@ -605,7 +605,7 @@
                     </li>
                   </ul>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item" style="border-bottom: 0 !important;">
                     <a class="text-gray" href="#">
                     Documentation
                   </a>
@@ -624,7 +624,7 @@
                               </g>
                           </svg>
                         </div>
-                        <div class="col-7">
+                        <div class="col-7 text-gray">
                           <h4 class= "header-sm" style="margin-top: 0;">DOCUMENTATION</h4>
                           <p>Customizing and building</p>
                         </div>
@@ -642,14 +642,13 @@
                               </g>
                           </svg>
                         </div>
-                        <div class="col-7">
+                        <div class="col-7 text-gray">
                           <h4 class= "header-sm">COMPONENTS</h4>
                           <p>Full list of components</p>
                         </div>
                         <hr />
                       </a>
-                      <a href="#" class="row documentation-link" style="border:none">
-      
+                      <a href="#" class="row flex documentation-link" style="border:none">
                           <div class="icon-documentation">
                               <svg width="36px" height="36px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <title>Stockholm-icons / Files / File</title>
@@ -662,8 +661,8 @@
                                 </g>
                             </svg>
                           </div>
-                        <div class="col-6">
-                          <h4 class= "header-sm">CHANGELOG</h4>
+                        <div class="col-7 text-gray">
+                          <h4 class= "header-sm" style="margin-top: 0;">CHANGELOG</h4>
                           <p>Keep track of changes</p>
                         </div>
                         <div class="col-6" style="text-align: right;">
@@ -673,20 +672,16 @@
                         </div>
                       </a>
                     </div>
-                      
                 </li>
-                
               </ul>
-              <li>
-                  <button class="btn btn-buy header-btn"><a href="#">Buy now</a></button>
-                </li>
+                  <button class="btn-bottom btn-buy" style="margin: 0;width: 100%;"><a href="#">Buy now</a></button>
           </div>
       </div>
     </div>
     </div>
     <div class="main ">
       <div class = "small">
-      <div class="row">
+      <div class="row flex">
         <div class="text-welcome col-6">
           <h1>
             Welcome to <span style="color: #335eea;">Landkit.</span
@@ -717,7 +712,7 @@
   </div>
     <div class="feature main">
       <div class="small">
-        <div class="row">
+        <div class="row flex">
           <div class="col-3-lg">
             <div>
                 <svg width="48px" height="48px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -778,7 +773,7 @@
     </div>
     <div class="social-network main">
       <div class="small">
-        <div class="row small">
+        <div class="row flex small">
         </hr>
           <div class="col-2 text-light">
               <svg viewBox="0 0 2761 991" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -840,7 +835,7 @@
     </div>
     <div class="main register " style="background-image: linear-gradient(to bottom,#f9fbfd 0,#fff 100%);">
       <div class="container small">
-        <div class="row">
+        <div class="row flex">
           <div class="col-6">
             <div class="form-register">
               <img
@@ -864,15 +859,15 @@
                 <span style="color: #42ba96;"
                   >ever created for developers.|</span>
               </h1>
-              <p class="text-gray">
+              <p class="text-light">
                 Using Landkit to build your site means never worrying about
                 designing another page or cross browser compatibility. Our
                 ever-growing library of components and pre-designed layouts will
                 make your life easier.
               </p>
-              <div class="row">
+              <div class="row flex">
                 <div class="col-6">
-                  <div class="row">
+                  <div class="row flex">
                     <div class="small-col" style="margin-top: 15px;">
                         <div class="badge badge-rounded-circle badge-success-soft" style="margin-top: 25%;">
                           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check"><polyline points="20 6 9 17 4 12"></polyline></svg>
@@ -880,7 +875,7 @@
                       </div>
                   <div class="col-9"><p>Lifetime updates</p></div>
                 </div>
-                <div class="row">
+                <div class="row flex">
                     <div class="small-col" style="margin-top: 15px;">
                         <div class="badge badge-rounded-circle badge-success-soft" style="margin-top: 25%;">
                           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check"><polyline points="20 6 9 17 4 12"></polyline></svg>
@@ -891,7 +886,7 @@
                 </div>
                 </div>
                 <div class ="col-6">
-                <div class="row">
+                <div class="row flex">
                     <div class="small-col" style="margin-top: 15px;">
                         <div class="badge badge-rounded-circle badge-success-soft" style="margin-top: 25%;">
                           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check"><polyline points="20 6 9 17 4 12"></polyline></svg>
@@ -899,7 +894,7 @@
                       </div>
                   <div class="col-9"><p>Tech support
                   </p></div>
-                </div><div class="row">
+                </div><div class="row flex">
                     <div class="small-col" style="margin-top: 15px;">
                         <div class="badge badge-rounded-circle badge-success-soft" style="margin-top: 25%;">
                           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check"><polyline points="20 6 9 17 4 12"></polyline></svg>
@@ -918,7 +913,7 @@
     </div>
     <div class="main register " style="background-color: #f9fbfd;">
         <div class="container small">
-          <div class="row">           
+          <div class="row flex">           
             <div class="col-6">
               <div class="resource-nomargintop">
                 <h1>
@@ -929,8 +924,8 @@
                 <p class="text-gray">
                     We've built well over a dozen Bootstrap themes and sold tens of thousands of copies.
                 </p>
-                <div class="row" style="display: block; margin-top:30px">
-                  <div class="row" style="display: block;">
+                <div class="row flex" style="display: block; margin-top:30px">
+                  <div class="row flex" style="display: block;">
                     <div class ="small-col" style="margin-top:17px">
                       <svg width="48px" height="48px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <title>Stockholm-icons / Media / Repeat</title>
@@ -947,7 +942,7 @@
                     <p class="text-gray" style="margin-bottom: 10px !important;">We've been developing with Bootstrap since it was publicly released in 2011.</p>
                    </div>
                   </div>
-                  <div class="row" style="display: block;">
+                  <div class="row flex" style="display: block;">
                     <div class='small-col' style="margin-top:17px">
                       <svg width="48px" height="48px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <title>Stockholm-icons / Code / Code</title>
@@ -982,7 +977,7 @@
       <div class="register main" style="background-color: #f9fbfd;">
         <div class="small">
           <div class="container">
-            <div class="row e-center">  
+            <div class="row flex e-center">  
                     <div class="text-center">
                       <h2>
                         Our customers are our biggest fans.
@@ -994,9 +989,9 @@
                     </div>
                   </div>    
             
-            <div class="row space-top">      
+            <div class="row flex space-top">      
               <div class = "slideshow-container" >
-                <div class="row mySlides1">
+                <div class="row-slide flex mySlides1 ">
                   <div class="col-6 fade-in">
                       <img class="slide-img" height="400px" src="https://landkit.goodthemes.co/assets/img/photos/photo-1.jpg"/>
                   </div>
@@ -1008,8 +1003,8 @@
                   <div class="col-6 slide-in">
                     <div class="slide-text">
                             <blockquote >
-                              <div class="row" style="margin-left:25% ;">
-                                <div class="col-6">
+                              <div class="row flex" style="justify-content: center;display: flex !important;">
+                                <div class="col-6 img-soical">
                                   <div class="img-fluid svg-shim" style="color: #FF5A5F;">
                                     <svg viewBox="0 0 2761 991" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                       <g id="airbnb" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -1031,7 +1026,7 @@
                     </div>
                     </div>
                     </div>
-                    <div class="row mySlides1">
+                    <div class="row-slide flex mySlides1">
                         <div class="col-6 fade-in">
                             <img class="slide-img" height="400px"src="https://landkit.goodthemes.co/assets/img/photos/photo-2.jpg"/>
                         </div>
@@ -1043,8 +1038,8 @@
                         <div class="col-6 slide-in">
                             <div class="slide-text">
                                 <blockquote>
-                                  <div class="row" style="margin-left:25% ;">
-                                    <div class="col-6">
+                                  <div class="row flex" style="justify-content: center;display: flex !important;">
+                                    <div class="col-6 img-soical">
                                       <div class="img-fluid svg-shim" style="color: #3F5D87;">
                                         <svg viewBox="0 0 2761 991" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                             <g id="instagram" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -1089,7 +1084,7 @@
                     if (n > x.length) {slideIndex = 1}    
                     if (n < 1) {slideIndex = x.length}
                     for (i = 0; i < x.length; i++) {
-                       x[i].style.display = "none";  
+                       x[i].style.display = "none ";  
                     }
                     x[slideIndex-1].style.display = "block";  
                   }
@@ -1101,8 +1096,8 @@
           </div>
           <div class="register " style="background-color: #f1f4f8;">
               <div class="container small">
-                  <div class="row">
-                      <div class="col-6" style="padding-right:70px;margin-top:5%">
+                  <div class="row flex">
+                      <div class="col-6" style="margin-top:5%">
                               <h2>
                                 Stay focused on your business. <br>
                                 <span class="text-primary">Let us handle the design</span>.
@@ -1110,7 +1105,7 @@
                               <p class="font-size-lg text-gray" style="padding-bottom: 15px;">
                                 You have a business to run. Stop worring about cross-browser bugs, designing new pages, keeping your components up to date. Let us do that for you.
                               </p>
-                              <div class="row">
+                              <div class="row flex">
                                 <div class="col-3-sm border-right" style="margin-right: 20px ;">
                                   <h3 class="text-black">
                                     <span data-toggle="countup" >100</span>%
@@ -1147,8 +1142,8 @@
               </div>
               </div>
               <div class="main " style="background-color: #f1f4f8;">
-                  <div class="container" >
-                    <div class="row e-center" style="margin-bottom: 20px ;">   
+                  <div class="container small" >
+                    <div class="row flex e-center" style="margin-bottom: 20px ;">   
                             <div class="col-6 text-center" >
                               <h2>
                                   Fair, simple pricing for all.
@@ -1172,7 +1167,7 @@
                             </div>
                           </div>    
                     
-                    <div class="row small" >      
+                    <div class="row flex small" >      
                           <div class="col-6 box box-front">
                             <div style="padding:30px;">
                                     <div class="label">
@@ -1189,7 +1184,7 @@
                                         per seat
                                       </p>
                                     <div  class="content pl">
-                                      <div class="row " >
+                                      <div class="row flex" >
                                         <div class="small-col">
                                           <div class="badge badge-rounded-circle badge-success-soft" style="margin-top: 25%;">
                                             <svg  width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check"><polyline points="20 6 9 17 4 12"></polyline></svg>
@@ -1199,7 +1194,7 @@
                                             Rich, responsive landing pages
                                           </p>
                                         </div>
-                                        <div class="row ">
+                                        <div class="row flex">
                                             <div class="small-col">
                                             <div class="badge badge-rounded-circle badge-success-soft" style="margin-top: 25%;">
                                               <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check"><polyline points="20 6 9 17 4 12"></polyline></svg>
@@ -1209,7 +1204,7 @@
                                             100+ styled components
                                             </p>
                                           </div>
-                                          <div class="row ">
+                                          <div class="row flex">
                                               <div class="small-col">
                                               <div class="badge badge-rounded-circle badge-success-soft" style="margin-top: 25%;">
                                                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check"><polyline points="20 6 9 17 4 12"></polyline></svg>
@@ -1218,7 +1213,7 @@
                                               <p>Flexible, simple license
                                               </p>
                                             </div>
-                                            <div class="row ">
+                                            <div class="row flex">
                                                 <div class="small-col">
                                                 <div class="badge badge-rounded-circle badge-success-soft" style="margin-top: 25%;">
                                                   <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check"><polyline points="20 6 9 17 4 12"></polyline></svg>
@@ -1227,7 +1222,7 @@
                                                 <p>Speedy build tooling
                                                 </p>
                                               </div>
-                                              <div class="row ">
+                                              <div class="row flex">
                                                   <div class="small-col">
                                                   <div class="badge badge-rounded-circle badge-success-soft" style="margin-top: 25%;">
                                                     <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check"><polyline points="20 6 9 17 4 12"></polyline></svg>
@@ -1267,9 +1262,9 @@
               </div>
                   <div class="register e-center" style="background-color:#1b2a4e!important;">
                     <div class="container small" >
-                      <div class="row">
+                      <div class="row flex">
                         <div class="col-6">
-                          <div class="row" style="height: auto;">
+                          <div class="row flex" style="height: auto;">
                             <div class="small-col" style="margin-top: 15px;">
                                 <div class="badge badge-rounded-circle badge-success-soft question-mark e-center">?
                                 </div>
@@ -1283,7 +1278,7 @@
                                 </p>
                               </div>
                         </div>
-                        <div class="row"style="height: auto;">
+                        <div class="row flex"style="height: auto;">
                             <div class="small-col" style="margin-top: 15px;">
                                 <div class="badge badge-rounded-circle badge-success-soft question-mark e-center">
                                   <span>?</span>
@@ -1300,7 +1295,7 @@
                         </div>
                         </div>
                         <div class="col-6">
-                        <div class="row" style="height: auto;">
+                        <div class="row flex" style="height: auto;">
                             <div class="small-col" style="margin-top: 15px;">
                                 <div class="badge badge-rounded-circle badge-success-soft question-mark e-center">
                                   ?
@@ -1315,7 +1310,7 @@
                                 </p>
                 
                               </div>
-                        </div><div class="row">
+                        </div><div class="row flex">
                             <div class="small-col" style="margin-top: 15px;">
                                 <div class="badge badge-rounded-circle badge-success-soft question-mark e-center">
                                   ?
@@ -1337,7 +1332,7 @@
                     </div>
                     <div class="register e-center" style="background-color:#1b2a4e!important;"> 
                       <div class="container small e-center">    
-                          <div class="col-6" style="text-align: center;margin-bottom:70px">
+                          <div class="" style="text-align: center;margin-bottom:70px; width: 500px;">
                                <div class="label label-gray">
                                   <span class="h6 uppercase">Get started</span>
                                </div>
@@ -1356,13 +1351,13 @@
                   </div> 
                   <footer class="register e-center" style="background-color:#f1f4f8!important;">
                       <div class="container small">
-                        <div class="row" style="height: auto;">
-                          <div class="col-3" style="margin-right:50px ;">
+                        <div class="row flex" style="height: auto;">
+                          <div class="col-3 icon-social" style="margin-right:50px ;">
                             <img style="margin-top:20px;" src="https://landkit.goodthemes.co/assets/img/brand.svg" alt="..." class="footer-brand img-fluid mb-2">
                             <p class="text-gray">
                               A better way to build.
                             </p>
-                            <div class="row">
+                            <div class="row flex">
                               <div class="col-2">
                                 <a href="#!" >
                                   <img src="https://landkit.goodthemes.co/assets/img/icons/social/instagram.svg" class="list-social-icon" alt="...">
@@ -1385,7 +1380,8 @@
                               </div>
                             </div>
                           </div>
-                          <div class="col-3">
+                          <div class= "col-6 col-footer">
+                          <div class="col-6 col-6-res">
                             <h6 class="uppercase text-gray">
                               Products
                             </h6>
@@ -1417,7 +1413,7 @@
                               </li>
                             </ul>
                           </div>
-                          <div class="col-3">
+                          <div class="col-6 col-6-res">
                             <h6 class="uppercase text-gray">
                               Services
                             </h6>
@@ -1444,7 +1440,9 @@
                               </li>
                             </ul>
                           </div>
-                          <div class="col-3">
+                          </div>
+                          <div class="col-6">
+                          <div class="col-6 col-6-res">
                             <h6 class="uppercase text-gray">
                               Connect
                             </h6>
@@ -1486,7 +1484,7 @@
                               </li>
                             </ul>
                           </div>
-                          <div class="col-3">
+                          <div class="col-6 col-6-res">
                             <h6 class=" uppercase text-gray">
                               Legal
                             </h6>
@@ -1508,6 +1506,7 @@
                               </li>
                             </ul>
                           </div>
+                        </div>
                         </div> 
                       </div> 
                     </footer>       
