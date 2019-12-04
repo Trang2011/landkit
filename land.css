@@ -41,6 +41,9 @@ body {
     .slide-res{
         display: unset !important;
     }
+    .row-order{
+        display:  grid !important;
+    }
     .small {
         width: 500px !important;
       }
@@ -75,19 +78,16 @@ body {
         width: 50% !important;
     }
     .text-welcome{
-        transform: translateY(140%);
-        text-align:  center;
+        order : 2
     }
     .image-welcome {
-        transform: translateY(-70%);
+       order : 1
     }
     .register .form-register {
-        margin-right: 0 !important;
-        transform: translateY(100%);
+        order : 1
     }
     .register .resource{
-        transform: translateY(-100%);
-        margin-top: 0 !important ;
+        order :2;
     } 
     .pl {
         padding-left: 70px !important;
@@ -204,6 +204,9 @@ a{
 }
 .row-slide{
     width: 100%;
+}
+.row-order{
+    width : 100%;
 }
 .col-6{
     width: 50%;
