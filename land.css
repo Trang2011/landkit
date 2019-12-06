@@ -210,7 +210,7 @@ body {
     left: 20px;
     top: 20px;
     width: 93%;
-    height: 900px;
+    height: 95vh;
     /* height: -webkit-fill-available; */
     overflow: auto;
     background-color: white;    
@@ -1006,3 +1006,95 @@ ul{
 .text-gray-200 {
     color: #f1f4f8!important;
 }
+.fadeInUp {
+    
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+}
+.fadeInLeft {
+    
+    animation-name: fadeInLeft;
+    -webkit-animation-name: fadeInLeft;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+}
+.fadeInRight {
+    
+    animation-name: fadeInRight;
+    -webkit-animation-name: fadeInRight;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translate3d(-40px,0,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translate3d(-40px,0,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translate3d(40px,0,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translate3d(40px,0,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+
