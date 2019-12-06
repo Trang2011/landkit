@@ -1097,4 +1097,6 @@ ul{
     }
 }
 
-
+.register .form-register .input-register .input:focus{
+    outline: none;
+}
