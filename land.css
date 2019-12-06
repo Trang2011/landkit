@@ -44,14 +44,42 @@ body {
     .header-responsive{
         display: block !important;
     }
-    .main .text-welcome p, .feature p{
+    .main .text-welcome p{
         font-size: 20px !important;
     }
-    .main .text-welcome h1,.feature h2{
+    .main .text-welcome h1{
         font-size: 25px !important;
     }
-    
+    h2{
+        font-size: 20px !important;
+    }
+    p{
+        font-size: 17px !important;
+    }
+    .resource-nomargintop{
+        font-size: 17px;
+    }
+    h1{
+        font-size: 20px;
+    }
+    .icon-social{
+        width: 33% !important;
+    }
+    .icon-social{
+        margin : 0;
+    }
+    .col-footer{
+        width: 60% !important;
+        margin-bottom: 20px;
+    }
+    .mgl-2{
+        margin-left : 33%;
+        transform: translateX(50px);
+    }
+    .footer-display2{
+        display: block !important;
 
+    }
   } 
   @media only screen and (max-width: 830px) {
     .slide-res{
@@ -70,7 +98,7 @@ body {
         width: 100% !important;
     }
     .col-6-resource{
-        width: 50% !important;
+        width: 100% !important;
     }
     .col-3-lg{
         width:  100% !important;
@@ -96,9 +124,6 @@ body {
     .col-6-res{
         width: 50% !important;
     }
-    .col-6-resource{
-        width: 50% !important;
-    }
     .text-welcome{
         order : 2;
         text-align: center;
@@ -106,12 +131,15 @@ body {
     .image-welcome {
        order : 1
     }
-    .register .form-register {
+    .design-text{
         order : 2
     }
-    .register .resource{
+    .design-img{
         order :1;
     } 
+    .option h2{
+        font-size: 25px !important;
+    }
     .pl {
         padding-left: 70px !important;
         text-align: left;
@@ -134,6 +162,10 @@ body {
     }
     .slide-img{
         border-radius : 0 !important;
+    }
+    .mgl-2{
+        margin-left : 0 !important;
+        transform: translateX(0) !important;
     }
   }
 .header-bar{
@@ -290,12 +322,12 @@ a{
     height: 100%;
 }
 .small-col{
-    width : 12%;
+    width : 13%;
     float : left;
     height: 100%;
 }
 .large-col{
-    width : 88%;
+    width : 87%;
     float : left;
     height: 100%;
 }
