@@ -11,15 +11,17 @@
   </head>
   <body>
     <div class="main">
-      <div class= "small flex">
+      <div class= "small flex" style="position : relative">
       <div class="logo">
         <img src="https://landkit.goodthemes.co/assets/img/brand.svg" />
       </div>
       <div class="menu-navbar header-bar">
-        <ul id="menu-navbar">
+        <!-- <div id ="menu-navbar"> -->
+        <ul id ="menu-navbar">
+         
           <li>
             <a class ="head-hover" href="#">Landings</a>
-            <div   id="dropdown" class="landings" style="width: 680px;border-radius: 5px;padding : 0"
+            <div   id="dropdown" class="landings fadeDropdownInUp" style="width: 680px;border-radius: 5px;padding : 0"
             >
               <div class="row flex">
                 <div
@@ -84,7 +86,7 @@
           </li>
           <li>
             <a class= "head-hover" href="#">Pages</a>
-            <div id="dropdown" style="padding-left: 30px;">
+            <div id="dropdown" class= "fadeDropdownInUp" style="padding-left: 30px;">
               <div class="row flex">
                 <!-- <div class="sub-menu"> -->
                   <div class="col-3">
@@ -180,7 +182,7 @@
           <li>
             <a href="#">Account</a>
             <div
-              id="dropdown" class="account" style=" width: 200px;">
+              id="dropdown" class="account fadeDropdownInUp" style=" width: 200px;">
               <!-- <div class="sub-menu"> -->
                 <ul class="account">
                   <li style="width : 100%">
@@ -292,7 +294,7 @@
             <a href="#">Documentation</a>
             <div
               id="dropdown"
-              class="documentation"
+              class="documentation fadeDropdownInUp"
               style="background-color: white; width: 350px;padding: 15px;"
             >
               <div class="sub-menu0">
@@ -361,10 +363,12 @@
               </div>
             </div>
           </li>
-          <li>
+          <!-- <li>
             <button class="btn btn-buy header-btn"><a href="#">Buy now</a></button>
-          </li>
+          </li> -->
         </ul>
+        <button class="btn btn-buy header-btn"><a href="#">Buy now</a></button>
+        <!-- </div> -->
       </div>
       <div class = "header-responsive">
         <button class="btn-responsive" onclick="dropdownBtn()">
@@ -994,7 +998,7 @@
               <div class = "slideshow-container" >
                 <div class="row-slide flex mySlides1 ">
                   <div class="col-6 fade-in">
-                      <img class="slide-img" height="400px" src="https://landkit.goodthemes.co/assets/img/photos/photo-1.jpg"/>
+                      <img class="slide-img"  src="https://landkit.goodthemes.co/assets/img/photos/photo-1.jpg"/>
                   </div>
                   <div class="shape shape-right shape-fluid-y text-white d-md-block" style="width: 50%;">
                       <svg viewBox="0 0 112 690" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1106,7 +1110,7 @@
                               <p class="font-size-lg text-gray" style="padding-bottom: 15px;">
                                 You have a business to run. Stop worring about cross-browser bugs, designing new pages, keeping your components up to date. Let us do that for you.
                               </p>
-                              <div class="row flex">
+                              <div class="flex">
                                 <div class="col-3 border-right" style="margin-right: 20px ;">
                                   <h3 class="text-black">
                                     <span data-toggle="countup" >100</span>%
